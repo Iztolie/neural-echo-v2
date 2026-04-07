@@ -1,0 +1,35 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Backup files from cleanup
+*.bak
+
+# Model weights (too large for git)
+model_cache/
+*.pt
+*.bin
+*.safetensors
+
+# Datasets
+data/
+
+# Generated test output
+test_results/
+test_logs/
+
+# Environment
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

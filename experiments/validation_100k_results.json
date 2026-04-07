@@ -1,0 +1,30 @@
+{
+  "test_1": {
+    "status": "PASSED",
+    "snapshots_stored": 5
+  },
+  "test_2": {
+    "status": "PASSED",
+    "compression_ratio": 4.0,
+    "memory_saved_mb": 3.129558563232422
+  },
+  "test_3": {
+    "status": "PASSED",
+    "final_drift": 0.05506587179843336,
+    "drift_rate": 0.0013546366710215807
+  },
+  "test_4": {
+    "status": "FAILED",
+    "forgetting_with_echo": 0.4880000272144874,
+    "forgetting_baseline": 0.46533335869510967,
+    "improvement_percent": -4.87106030458244,
+    "std_with": 0.02833135341302348,
+    "std_without": 0.061304326202279665
+  },
+  "test_5": {
+    "status": "PASSED",
+    "baseline_time": 0.09548497200012207,
+    "echo_time": 0.11420369148254395,
+    "overhead_percent": 19.603838269333046
+  }
+}

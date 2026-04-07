@@ -1,0 +1,381 @@
+{
+  "compression_ratio": {
+    "100k": {
+      "param_count": 118282,
+      "param_bytes": 473128,
+      "per_snapshot_mb": 0.45121002197265625,
+      "n_snapshots": 10,
+      "uncompressed_total_mb": 4.5121002197265625,
+      "compressed_total_mb": 1.1280250549316406,
+      "compression_ratio": 4.0,
+      "memory_saved_mb": 3.384075164794922,
+      "avg_store_time_ms": 50.355579995084554,
+      "std_store_time_ms": 13.906740693448063
+    },
+    "1m": {
+      "param_count": 798474,
+      "param_bytes": 3193896,
+      "per_snapshot_mb": 3.0459365844726562,
+      "n_snapshots": 10,
+      "uncompressed_total_mb": 30.459365844726562,
+      "compressed_total_mb": 7.614841461181641,
+      "compression_ratio": 4.0,
+      "memory_saved_mb": 22.844524383544922,
+      "avg_store_time_ms": 71.55896999174729,
+      "std_store_time_ms": 10.988421088952187
+    },
+    "10m": {
+      "param_count": 8432138,
+      "param_bytes": 33728552,
+      "per_snapshot_mb": 32.166053771972656,
+      "n_snapshots": 10,
+      "uncompressed_total_mb": 321.66053771972656,
+      "compressed_total_mb": 80.41513442993164,
+      "compression_ratio": 4.0,
+      "memory_saved_mb": 241.24540328979492,
+      "avg_store_time_ms": 342.10737998364493,
+      "std_store_time_ms": 16.672348373851296
+    }
+  },
+  "reconstruction_error": {
+    "100k": {
+      "n_runs": 10,
+      "mean_param_diff": 0.0007328884768260954,
+      "std_param_diff": 0.0001409160424633089,
+      "mean_relative_diff": 0.020757586285957672,
+      "mean_loss_diff": 0.0009737253189086914,
+      "std_loss_diff": 0.000642133414162959,
+      "mean_acc_uncompressed": 0.0984375,
+      "mean_acc_compressed": 0.100390625,
+      "mean_acc_diff": 0.008984375,
+      "std_acc_diff": 0.006310740008360747
+    },
+    "1m": {
+      "n_runs": 10,
+      "mean_param_diff": 0.0005390563291257422,
+      "std_param_diff": 8.020118169710613e-05,
+      "mean_relative_diff": 0.022361325931830076,
+      "mean_loss_diff": 0.0005156278610229492,
+      "std_loss_diff": 0.0004015647408658904,
+      "mean_acc_uncompressed": 0.1046875,
+      "mean_acc_compressed": 0.1015625,
+      "mean_acc_diff": 0.009375,
+      "std_acc_diff": 0.005579240959799101
+    },
+    "10m": {
+      "n_runs": 10,
+      "mean_param_diff": 0.0003402030114011723,
+      "std_param_diff": 5.957324936622859e-05,
+      "mean_relative_diff": 0.02208738795726285,
+      "mean_loss_diff": 0.0004544973373413086,
+      "std_loss_diff": 0.000181975611831053,
+      "mean_acc_uncompressed": 0.098828125,
+      "mean_acc_compressed": 0.0953125,
+      "mean_acc_diff": 0.018359375,
+      "std_acc_diff": 0.01639229317059163
+    }
+  },
+  "quantization_error": {
+    "100k": {
+      "avg_quantization_error": 8.68395371321151e-05,
+      "avg_relative_error": 0.0035659505520015955,
+      "avg_snr_db": 48.78291893005371,
+      "loss_before_quant": 2.299881935119629,
+      "loss_after_quant": 2.299884796142578,
+      "loss_degradation": 2.86102294921875e-06,
+      "acc_before_quant": 0.08984375,
+      "acc_after_quant": 0.09375,
+      "acc_degradation": 0.00390625
+    },
+    "1m": {
+      "avg_quantization_error": 7.861942482880121e-05,
+      "avg_relative_error": 0.003788620699197054,
+      "avg_snr_db": 48.360023975372314,
+      "loss_before_quant": 2.3029699325561523,
+      "loss_after_quant": 2.3029532432556152,
+      "loss_degradation": 1.6689300537109375e-05,
+      "acc_before_quant": 0.09765625,
+      "acc_after_quant": 0.09765625,
+      "acc_degradation": 0.0
+    },
+    "10m": {
+      "avg_quantization_error": 4.964279103803254e-05,
+      "avg_relative_error": 0.0037650030571967363,
+      "avg_snr_db": 48.53558883666992,
+      "loss_before_quant": 2.3051681518554688,
+      "loss_after_quant": 2.305161714553833,
+      "loss_degradation": 6.4373016357421875e-06,
+      "acc_before_quant": 0.08984375,
+      "acc_after_quant": 0.08984375,
+      "acc_degradation": 0.0
+    }
+  },
+  "overhead": {
+    "100k": {
+      "baseline_time_s": 0.11708640004508197,
+      "echo_uncompressed_time_s": 0.12917319999542087,
+      "echo_compressed_time_s": 0.648871700046584,
+      "overhead_uncompressed_pct": 10.322975124083667,
+      "overhead_compressed_pct": 454.1819543488807,
+      "n_steps": 100
+    },
+    "1m": {
+      "baseline_time_s": 0.1822365999687463,
+      "echo_uncompressed_time_s": 0.2242231999989599,
+      "echo_compressed_time_s": 0.9197553000412881,
+      "overhead_uncompressed_pct": 23.039608968458765,
+      "overhead_compressed_pct": 404.7039399324981,
+      "n_steps": 100
+    },
+    "10m": {
+      "baseline_time_s": 0.7588938999688253,
+      "echo_uncompressed_time_s": 0.9095160000724718,
+      "echo_compressed_time_s": 4.7033522999845445,
+      "overhead_uncompressed_pct": 19.847583451367043,
+      "overhead_compressed_pct": 519.7641462367473,
+      "n_steps": 100
+    }
+  },
+  "projections": {
+    "100K (tested)": {
+      "model_name": "100K (tested)",
+      "param_count": 100000,
+      "fp32_per_snapshot_gb": 0.0003725290298461914,
+      "compressed_per_snapshot_gb": 9.313225746154785e-05,
+      "5_snapshots": {
+        "uncompressed_gb": 0.0,
+        "compressed_gb": 0.0,
+        "saved_gb": 0.0,
+        "saved_cost_usd": 0.04
+      },
+      "10_snapshots": {
+        "uncompressed_gb": 0.0,
+        "compressed_gb": 0.0,
+        "saved_gb": 0.0,
+        "saved_cost_usd": 0.08
+      },
+      "20_snapshots": {
+        "uncompressed_gb": 0.01,
+        "compressed_gb": 0.0,
+        "saved_gb": 0.01,
+        "saved_cost_usd": 0.17
+      },
+      "50_snapshots": {
+        "uncompressed_gb": 0.02,
+        "compressed_gb": 0.0,
+        "saved_gb": 0.01,
+        "saved_cost_usd": 0.42
+      }
+    },
+    "1M (tested)": {
+      "model_name": "1M (tested)",
+      "param_count": 1000000,
+      "fp32_per_snapshot_gb": 0.003725290298461914,
+      "compressed_per_snapshot_gb": 0.0009313225746154785,
+      "5_snapshots": {
+        "uncompressed_gb": 0.02,
+        "compressed_gb": 0.0,
+        "saved_gb": 0.01,
+        "saved_cost_usd": 0.42
+      },
+      "10_snapshots": {
+        "uncompressed_gb": 0.04,
+        "compressed_gb": 0.01,
+        "saved_gb": 0.03,
+        "saved_cost_usd": 0.84
+      },
+      "20_snapshots": {
+        "uncompressed_gb": 0.07,
+        "compressed_gb": 0.02,
+        "saved_gb": 0.06,
+        "saved_cost_usd": 1.68
+      },
+      "50_snapshots": {
+        "uncompressed_gb": 0.19,
+        "compressed_gb": 0.05,
+        "saved_gb": 0.14,
+        "saved_cost_usd": 4.19
+      }
+    },
+    "10M (tested)": {
+      "model_name": "10M (tested)",
+      "param_count": 10000000,
+      "fp32_per_snapshot_gb": 0.03725290298461914,
+      "compressed_per_snapshot_gb": 0.009313225746154785,
+      "5_snapshots": {
+        "uncompressed_gb": 0.19,
+        "compressed_gb": 0.05,
+        "saved_gb": 0.14,
+        "saved_cost_usd": 4.19
+      },
+      "10_snapshots": {
+        "uncompressed_gb": 0.37,
+        "compressed_gb": 0.09,
+        "saved_gb": 0.28,
+        "saved_cost_usd": 8.38
+      },
+      "20_snapshots": {
+        "uncompressed_gb": 0.75,
+        "compressed_gb": 0.19,
+        "saved_gb": 0.56,
+        "saved_cost_usd": 16.76
+      },
+      "50_snapshots": {
+        "uncompressed_gb": 1.86,
+        "compressed_gb": 0.47,
+        "saved_gb": 1.4,
+        "saved_cost_usd": 41.91
+      }
+    },
+    "LLaMA-7B class": {
+      "model_name": "LLaMA-7B class",
+      "param_count": 7000000000,
+      "fp32_per_snapshot_gb": 26.0770320892334,
+      "compressed_per_snapshot_gb": 6.51925802230835,
+      "5_snapshots": {
+        "uncompressed_gb": 130.39,
+        "compressed_gb": 32.6,
+        "saved_gb": 97.79,
+        "saved_cost_usd": 2933.67
+      },
+      "10_snapshots": {
+        "uncompressed_gb": 260.77,
+        "compressed_gb": 65.19,
+        "saved_gb": 195.58,
+        "saved_cost_usd": 5867.33
+      },
+      "20_snapshots": {
+        "uncompressed_gb": 521.54,
+        "compressed_gb": 130.39,
+        "saved_gb": 391.16,
+        "saved_cost_usd": 11734.66
+      },
+      "50_snapshots": {
+        "uncompressed_gb": 1303.85,
+        "compressed_gb": 325.96,
+        "saved_gb": 977.89,
+        "saved_cost_usd": 29336.66
+      }
+    },
+    "LLaMA-13B class": {
+      "model_name": "LLaMA-13B class",
+      "param_count": 13000000000,
+      "fp32_per_snapshot_gb": 48.42877388000488,
+      "compressed_per_snapshot_gb": 12.10719347000122,
+      "5_snapshots": {
+        "uncompressed_gb": 242.14,
+        "compressed_gb": 60.54,
+        "saved_gb": 181.61,
+        "saved_cost_usd": 5448.24
+      },
+      "10_snapshots": {
+        "uncompressed_gb": 484.29,
+        "compressed_gb": 121.07,
+        "saved_gb": 363.22,
+        "saved_cost_usd": 10896.47
+      },
+      "20_snapshots": {
+        "uncompressed_gb": 968.58,
+        "compressed_gb": 242.14,
+        "saved_gb": 726.43,
+        "saved_cost_usd": 21792.95
+      },
+      "50_snapshots": {
+        "uncompressed_gb": 2421.44,
+        "compressed_gb": 605.36,
+        "saved_gb": 1816.08,
+        "saved_cost_usd": 54482.37
+      }
+    },
+    "LLaMA-70B class": {
+      "model_name": "LLaMA-70B class",
+      "param_count": 70000000000,
+      "fp32_per_snapshot_gb": 260.770320892334,
+      "compressed_per_snapshot_gb": 65.1925802230835,
+      "5_snapshots": {
+        "uncompressed_gb": 1303.85,
+        "compressed_gb": 325.96,
+        "saved_gb": 977.89,
+        "saved_cost_usd": 29336.66
+      },
+      "10_snapshots": {
+        "uncompressed_gb": 2607.7,
+        "compressed_gb": 651.93,
+        "saved_gb": 1955.78,
+        "saved_cost_usd": 58673.32
+      },
+      "20_snapshots": {
+        "uncompressed_gb": 5215.41,
+        "compressed_gb": 1303.85,
+        "saved_gb": 3911.55,
+        "saved_cost_usd": 117346.64
+      },
+      "50_snapshots": {
+        "uncompressed_gb": 13038.52,
+        "compressed_gb": 3259.63,
+        "saved_gb": 9778.89,
+        "saved_cost_usd": 293366.61
+      }
+    },
+    "GPT-4 class (est.)": {
+      "model_name": "GPT-4 class (est.)",
+      "param_count": 200000000000,
+      "fp32_per_snapshot_gb": 745.0580596923828,
+      "compressed_per_snapshot_gb": 186.2645149230957,
+      "5_snapshots": {
+        "uncompressed_gb": 3725.29,
+        "compressed_gb": 931.32,
+        "saved_gb": 2793.97,
+        "saved_cost_usd": 83819.03
+      },
+      "10_snapshots": {
+        "uncompressed_gb": 7450.58,
+        "compressed_gb": 1862.65,
+        "saved_gb": 5587.94,
+        "saved_cost_usd": 167638.06
+      },
+      "20_snapshots": {
+        "uncompressed_gb": 14901.16,
+        "compressed_gb": 3725.29,
+        "saved_gb": 11175.87,
+        "saved_cost_usd": 335276.13
+      },
+      "50_snapshots": {
+        "uncompressed_gb": 37252.9,
+        "compressed_gb": 9313.23,
+        "saved_gb": 27939.68,
+        "saved_cost_usd": 838190.32
+      }
+    },
+    "LLaMA-405B class": {
+      "model_name": "LLaMA-405B class",
+      "param_count": 405000000000,
+      "fp32_per_snapshot_gb": 1508.7425708770752,
+      "compressed_per_snapshot_gb": 377.1856427192688,
+      "5_snapshots": {
+        "uncompressed_gb": 7543.71,
+        "compressed_gb": 1885.93,
+        "saved_gb": 5657.78,
+        "saved_cost_usd": 169733.54
+      },
+      "10_snapshots": {
+        "uncompressed_gb": 15087.43,
+        "compressed_gb": 3771.86,
+        "saved_gb": 11315.57,
+        "saved_cost_usd": 339467.08
+      },
+      "20_snapshots": {
+        "uncompressed_gb": 30174.85,
+        "compressed_gb": 7543.71,
+        "saved_gb": 22631.14,
+        "saved_cost_usd": 678934.16
+      },
+      "50_snapshots": {
+        "uncompressed_gb": 75437.13,
+        "compressed_gb": 18859.28,
+        "saved_gb": 56577.85,
+        "saved_cost_usd": 1697335.39
+      }
+    }
+  }
+}
