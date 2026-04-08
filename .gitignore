@@ -33,3 +33,7 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Draft articles (keep unpublished drafts out of public repo)
+paper/medium_article_v21.md
+paper/v21_snr_chart.html
